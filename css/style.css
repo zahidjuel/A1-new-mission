@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:wght@400;700;900&display=swap');
 
+/* common css starts here */
 * {
     padding: 0px;
     margin: 0px;
@@ -10,35 +11,165 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-/* banner section style starts here */
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1320px;
-    height: 600px;
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
-    background-image: url(../resources/Banner\ Image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: overlay;
-    border-radius: 16px;
-}
-
 .font-merri {
     font-family: 'Merriweather', serif;
 }
 
-.text-style {
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.my {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.text-color {
+    color: #F00;
+}
+
+.primary-color {
+    color: #070211;
+}
+
+/* common css ends here */
+
+
+/* banner section style starts here */
+.banner {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    background-image:
+        linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%),
+        url('../resources/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.text-lg {
     font-size: 32px;
     font-weight: 400;
 }
 
-.text-size {
+.text-xl {
     font-size: 72px;
     font-weight: 900;
+    line-height: 95px;
 }
+
 /* banner section style ends here */
+
+/* discount section style starts here */
+.discount {
+    text-align: center;
+}
+
+.text-xxl {
+    font-size: 88px;
+    font-weight: 900;
+}
+
+.text-sm {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-ml {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.mt {
+    margin-top: 48px;
+}
+
+.mb {
+    margin-bottom: 48px;
+}
+
+/* discount section style ends here */
+
+/* welcome section style starts here */
+
+.welcome {
+    height: 600px;
+    display: flex;
+    color: #fff;
+    background-image:
+        linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%),
+        url('../resources/Vectorrr.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+
+.welcome-left {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 120px;
+}
+
+.welcome-right {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.text-style {
+    letter-spacing: 7px;
+    font-size: 64px;
+    font-weight: 900;
+}
+
+.text-info {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 24px 0px;
+    line-height: 30px;
+}
+
+.join-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+/* welcome section style ends here */
+
+/* location section style starts here */
+.location {
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.00) 100%);
+    border-radius: 16px;
+}
+
+.text-size {
+    font-size: 32px;
+    font-weight: 600px;
+    line-height: 56px;
+    text-transform: capitalize;
+}
+
+/* location section style ends here */
